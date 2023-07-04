@@ -16,6 +16,10 @@ echo "deb http://http.kali.org/kali kali-rolling main contrib non-free" | tee /e
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 44C6513A8E4FB3D30875F758ED444FF07D8D0BF6 > /dev/null 2>&1
 apt-key --keyring /etc/apt/trusted.gpg.d/kali-archive-keyring.gpg adv --keyserver keyserver.ubuntu.com --recv-keys 44C6513A8E4FB3D30875F758ED444FF07D8D0BF6 > /dev/null 2>&1
 
+# Update system
+echo "${GREEN}Updating system...${NC}"
+apt update > /dev/null 2>&1
+
 # Hold back all packages that are ready to be upgraded
 echo "${GREEN}Holding back kali's default packages...${NC}"
 packages=$(apt list --upgradable 2>/dev/null | tail -n +2 | cut -d'/' -f1)

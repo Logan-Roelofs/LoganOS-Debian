@@ -30,48 +30,11 @@ apt update > /dev/null 2>&1
 
 # Hold back specific packages
 echo "${GREEN}Holding back specific packages...${NC}"
-packages=$(
-    base-files
-    bluez
-    bluez-obexd
-    desktop-base
-    firmware-misc-nonfree
-    gir1.2-adw-1
-    gir1.2-gtk-4.0
-    gir1.2-polkit-1.0
-    gnome-control-center
-    gnome-control-center-data
-    gnome-shell
-    gnome-shell-common
-    gnome-shell-extension-prefs
-    gnome-shell-extensions
-    gnome-terminal
-    gnome-terminal-data
-    init
-    init-system-helpers
-    libadwaita-1-0
-    libbluetooth3
-    libglib2.0-0
-    libglib2.0-bin
-    libglib2.0-data
-    libgtk-4-1
-    libgtk-4-bin
-    libgtk-4-common
-    libnautilus-extension4
-    libpolkit-agent-1-0
-    libpolkit-gobject-1-0
-    linux-image-amd64
-    mutter-common
-    nautilus
-    nautilus-data
-    nautilus-extension-gnome-terminal
-    pkexec
-    polkitd
-)
-for package in $packages; do
+packages=$( "base-files" "bluez" "bluez-obexd" "desktop-base" "firmware-misc-nonfree" "gir1.2-adw-1" "gir1.2-gtk-4.0" "gir1.2-polkit-1.0" "gnome-control-center" "gnome-control-center-data" "gnome-shell""gnome-shell-common" "gnome-shell-extension-prefs" "gnome-shell-extensions" "gnome-terminal" "gnome-terminal-data" "init" "init-system-helpers" "libadwaita-1-0" "libbluetooth3" "libglib2.0-0" "libglib2.0-bin" "libglib2.0-data" "libgtk-4-1" "libgtk-4-bin" "libgtk-4-common" "libnautilus-extension4" "libpolkit-agent-1-0" "libpolkit-gobject-1-0" "linux-image-amd64" "mutter-common" "nautilus" "nautilus-data" "nautilus-extension-gnome-terminal" "pkexec" "polkitd")
+for package in "${packages[@]}"; do
+    echo "Holding package: $package"
     apt-mark hold "$package"
 done
-
 
 
 # Get the current directory using pwd

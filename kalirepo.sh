@@ -27,5 +27,8 @@ for package in $packages; do
     apt-mark hold "$package"
 done
 
+# Hide SSH message form kali devs 
+touch ~/.hushlogin
+
 echo "${GREEN}All steps completed successfully.${NC}"
 

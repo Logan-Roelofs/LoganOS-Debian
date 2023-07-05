@@ -30,7 +30,7 @@ apt update > /dev/null 2>&1
 
 # Hold back specific packages
 echo "${GREEN}Holding back specific packages...${NC}"
-packages=(
+packages=$(
     base-files
     bluez
     bluez-obexd

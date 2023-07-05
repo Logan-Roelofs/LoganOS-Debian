@@ -3,5 +3,5 @@ Debian-Logan
 
 run 
 ```bash
-sudo apt install git && git clone https://github.com/Logan-Roelofs/Debian-Logan/ && sudo sh insatll.sh
+sudo apt install git && git clone https://github.com/Logan-Roelofs/Debian-Logan/ && sudo sh install.sh
 ```

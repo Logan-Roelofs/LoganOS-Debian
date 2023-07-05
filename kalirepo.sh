@@ -27,7 +27,12 @@ for package in $packages; do
     apt-mark hold "$package"
 done
 
-pwd 
+# Get the current directory using pwd
+current_directory=$(pwd)
+
+# Remove programs from apt hold using the directory variable
+echo "${GREEN}Removing programs from apt hold...${NC}"
+apt-mark unhold $(cat "$current_directory/unhold.txt")
 
 # Hide SSH message form kali devs 
 touch ~/.hushlogin

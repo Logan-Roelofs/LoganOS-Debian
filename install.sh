@@ -68,7 +68,7 @@ packages=$(
     pkexec
     polkitd
 )
-for package in "${packages[@]}"; do
+for package in $packages; do
     apt-mark hold "$package"
 done
 

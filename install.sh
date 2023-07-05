@@ -82,9 +82,6 @@ mkdir /usr/local/share/backgrounds/
 
 # Move image to file:///usr/local/share/backgrounds/wallpaper.jpg
 mv bg.jpg /usr/local/share/backgrounds/wallpaper.jpg
-gsettings set org.gnome.desktop.background picture-uri file:///usr/local/share/backgrounds/wallpaper.jpg
-gsettings set org.gnome.desktop.background picture-uri-dark file:///usr/local/share/backgrounds/wallpaper.jpg
-
 
 # Hide SSH message form kali devs 
 touch ~/.hushlogin

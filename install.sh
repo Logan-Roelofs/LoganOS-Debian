@@ -67,13 +67,15 @@ apt-mark hold nautilus-extension-gnome-terminal
 apt-mark hold pkexec
 apt-mark hold polkitd
 
+# Update system
+echo "${GREEN}Updating system...${NC}"
+apt update > /dev/null 2>&1
+
+echo "${GREEN}Upgrading system...${NC}"
+apt upgrade -y > /dev/null 2>&1
 
 # Get the current directory using pwd
 current_directory=$(pwd)
-
-# Remove programs from apt hold using the directory variable
-echo "${GREEN}Removing programs from apt hold...${NC}"
-apt-mark unhold $(cat "$current_directory/unhold.txt")
 
 # Hide SSH message form kali devs 
 touch ~/.hushlogin

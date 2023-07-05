@@ -27,6 +27,8 @@ for package in $packages; do
     apt-mark hold "$package"
 done
 
+pwd 
+
 # Hide SSH message form kali devs 
 touch ~/.hushlogin
 

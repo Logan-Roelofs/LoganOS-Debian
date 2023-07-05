@@ -77,40 +77,13 @@ apt upgrade -y > /dev/null 2>&1
 # Get the current directory using pwd
 current_directory=$(pwd)
 
+# Change background image
 mkdir /usr/local/share/backgrounds/
-mkdir /etc/dconf/db/local.d/locks/
 
 # Move image to file:///usr/local/share/backgrounds/wallpaper.jpg
 mv bg.jpg /usr/local/share/backgrounds/wallpaper.jpg
-
-# Create user profile
-echo "user-db:user" | tee /etc/dconf/profile/user
-echo "system-db:local" | tee -a /etc/dconf/profile/user
-
-# Create local database directory
-mkdir -p /etc/dconf/db/local.d
-
-# Create key file for background settings
-tee /etc/dconf/db/local.d/00-background <<EOF
-[org/gnome/desktop/background]
-picture-uri='file:///usr/local/share/backgrounds/wallpaper.jpg'
-picture-options='scaled'
-primary-color='000000'
-secondary-color='FFFFFF'
-EOF
-
-# Create locks file to prevent user override
-tee /etc/dconf/db/local.d/locks/background <<EOF
-/org/gnome/desktop/background/picture-uri
-/org/gnome/desktop/background/picture-options
-/org/gnome/desktop/background/primary-color
-/org/gnome/desktop/background/secondary-color
-EOF
-
-# Update system databases
-dconf update
-
-echo "Background settings have been updated. Please log out and back in for the changes to take effect."
+gsettings set org.gnome.desktop.background picture-uri file:///usr/local/share/backgrounds/wallpaper.jpg
+gsettings set org.gnome.desktop.background picture-uri-dark file:///usr/local/share/backgrounds/wallpaper.jpg
 
 
 # Hide SSH message form kali devs 

@@ -85,10 +85,6 @@ apt-get install -y tilix zsh
 # Make zsh default 
 chsh -s $(which zsh)
 
-# Install Oh my zsh 
-wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
-sh install.sh.1
-
 # Install zsh for hummans 
 if command -v curl >/dev/null 2>&1; then
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/romkatv/zsh4humans/v5/install)"

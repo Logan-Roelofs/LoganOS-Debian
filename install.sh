@@ -72,7 +72,7 @@ current_directory=$(pwd)
 mkdir /usr/local/share/backgrounds/
 
 # Move image to file:///usr/local/share/backgrounds/wallpaper.jpg
-mv bg.jpg /usr/local/share/backgrounds/wallpaper.jpg
+mv assets/bg.jpg /usr/local/share/backgrounds/wallpaper.jpg
 
 # Hide SSH message form kali devs 
 touch ~/.hushlogin

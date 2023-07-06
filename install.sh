@@ -79,6 +79,16 @@ mv configs/bg.jpg /usr/local/share/backgrounds/wallpaper.jpg
 # Hide SSH message form kali devs 
 touch ~/.hushlogin
 
+# Install software
+sudo apt-get install tilix zsh
+
+# Make zsh default 
+chsh -s $(which zsh)
+
+# Install Oh my zsh 
+wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+sh install.sh
+
 
 echo "${GREEN}All steps completed successfully.${NC}"
 

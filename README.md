@@ -20,7 +20,10 @@ Now that the script is installed do a reboot the run these following commands-
 ```bash 
 gsettings set org.gnome.desktop.background picture-uri file:///usr/local/share/backgrounds/wallpaper.jpg && gsettings set org.gnome.desktop.background picture-uri-dark file:///usr/local/share/backgrounds/wallpaper.jpg && gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 ```
-# Add tools/extentions to different programs
+# Post install 
+
+- Change Tilix theme to linux and enable dark mode and terminal title style to none
+- 
 
 # To do...
 

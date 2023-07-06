@@ -24,6 +24,20 @@ add-apt-repository -y "deb [arch=amd64] https://packages.microsoft.com/repos/vsc
 sudo apt-key export BE1229CF | sudo gpg --dearmour -o /usr/share/keyrings/microsoft.gpg > /dev/null 2>&1
 add-apt-repository -y "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /dev/null 2>&1
 
+# Add Kali Linux repos to apt source
+echo "${GREEN}Adding Kali Linux repositories...${NC}"
+echo "deb http://http.kali.org/kali kali-rolling main contrib non-free" | tee /etc/apt/sources.list.d/kali.list > /dev/null
+apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 44C6513A8E4FB3D30875F758ED444FF07D8D0BF6 > /dev/null 2>&1
+apt-key --keyring /etc/apt/trusted.gpg.d/kali-archive-keyring.gpg adv --keyserver keyserver.ubuntu.com --recv-keys 44C6513A8E4FB3D30875F758ED444FF07D8D0BF6 > /dev/null 2>&1
+
+# Add Microsoft repos & install a few dependencys & install vscode
+echo "${GREEN}Adding MS repositories...${NC}"
+apt install software-properties-common apt-transport-https wget -y > /dev/null 2>&1
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add - > /dev/null 2>&1
+add-apt-repository -y "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /dev/null 2>&1
+sudo apt-key export BE1229CF | sudo gpg --dearmour -o /usr/share/keyrings/microsoft.gpg > /dev/null 2>&1
+add-apt-repository -y "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /dev/null 2>&1
+
 # Update system
 echo "${GREEN}Updating system...${NC}"
 apt update > /dev/null 2>&1

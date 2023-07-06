@@ -17,13 +17,12 @@ apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 44C6513A8E4FB3D30875F75
 apt-key --keyring /etc/apt/trusted.gpg.d/kali-archive-keyring.gpg adv --keyserver keyserver.ubuntu.com --recv-keys 44C6513A8E4FB3D30875F758ED444FF07D8D0BF6 > /dev/null 2>&1
 
 # Add Microsoft repos & install a few dependencys & install vscode
-
+echo "${GREEN}Adding MS repositories...${NC}"
 apt install software-properties-common apt-transport-https wget -y > /dev/null 2>&1
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add - > /dev/null 2>&1
 add-apt-repository -y "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /dev/null 2>&1
 sudo apt-key export BE1229CF | sudo gpg --dearmour -o /usr/share/keyrings/microsoft.gpg > /dev/null 2>&1
 add-apt-repository -y "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /dev/null 2>&1
-apt install code
 
 # Update system
 echo "${GREEN}Updating system...${NC}"
@@ -67,8 +66,9 @@ apt update > /dev/null 2>&1
 echo "${GREEN}Upgrading system...${NC}"
 apt upgrade -y > /dev/null 2>&1
 
-# Get the current directory using pwd
-current_directory=$(pwd)
+echo "${GREEN}Auto removeing unused software...${NC}"
+
+apt autoremove -y 
 
 # Change background image
 mkdir /usr/local/share/backgrounds/
@@ -80,21 +80,9 @@ mv configs/bg.jpg /usr/local/share/backgrounds/wallpaper.jpg
 touch ~/.hushlogin
 
 # Install software
-apt-get install -y tilix zsh
-
-# Make zsh default 
-chsh -s $(which zsh)
-
-# Install zsh for hummans 
-if command -v curl >/dev/null 2>&1; then
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/romkatv/zsh4humans/v5/install)"
-else
-  sh -c "$(wget -O- https://raw.githubusercontent.com/romkatv/zsh4humans/v5/install)"
-fi
+apt-get install -y tilix zsh code
 
 # remove automatically installed programs that are no longer required
-apt autoremove -y 
-
 
 echo "${GREEN}All steps completed successfully.${NC}"
 

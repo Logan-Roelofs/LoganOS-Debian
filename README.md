@@ -1,6 +1,6 @@
 # LoganOS
 
-This repository is ment to change the default installation of Debian to a more custamized version that I can Logan OS.
+This repository is ment to change the default installation of Debian to a more custamized version that I call Logan OS.
 
 # Clone this repository 
 First make sure that you have git isntalled with the following command 

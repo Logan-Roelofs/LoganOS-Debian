@@ -78,7 +78,28 @@ touch ~/.hushlogin
 
 # Install software
 echo "${GREEN}Installing programs...${NC}"
-apt-get install -y tilix zsh code neofetch wireshark net-tools metasploit-framework niktonikto hydra curl hash-identifier ftp tldr tree enum4linux smbclient gzip ffuf netcat-traditional john > /dev/null 2>&1
+apt-get install -y tilix zsh
+echo "${GREEN}Installing programs...${NC}"
+apt-get install -y wireshark tree
+echo "${GREEN}Installing programs...${NC}"
+apt-get install -y code enum4linux
+echo "${GREEN}Installing programs...${NC}"
+apt-get install -y neofetch smbclient
+echo "${GREEN}Installing programs...${NC}"
+apt-get install -y net-tools gzip
+echo "${GREEN}Installing programs...${NC}"
+apt-get install -y metasploit-framework ffuf
+echo "${GREEN}Installing programs...${NC}"
+apt-get install -y hydra netcat-traditional
+echo "${GREEN}Installing programs...${NC}"
+apt-get install -y curl john
+echo "${GREEN}Installing programs...${NC}"
+apt-get install -y hash-identifier
+echo "${GREEN}Installing programs...${NC}"
+apt-get install -y ftp
+echo "${GREEN}Installing programs...${NC}"
+apt-get install -y tldr
+echo "${GREEN}Installing programs DONE...${NC}"
 
 # remove automatically installed programs that are no longer required
 

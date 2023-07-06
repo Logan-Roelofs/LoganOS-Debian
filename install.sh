@@ -20,15 +20,7 @@ apt-key --keyring /etc/apt/trusted.gpg.d/kali-archive-keyring.gpg adv --keyserve
 echo "${GREEN}Updating system...${NC}"
 apt update > /dev/null 2>&1
 
-# Hold back all packages that are ready to be upgraded
-
-#echo "${GREEN}Holding back kali's default packages...${NC}"
-#packages=$(apt list --upgradable 2>/dev/null | tail -n +2 | cut -d'/' -f1)
-#for package in $packages; do
-#    apt-mark hold "$package"
-#done
-
-# Hold back specific packages
+# Hold back specific packages from kali's repos
 echo "${GREEN}Holding back specific packages...${NC}"
 apt-mark hold base-files
 apt-mark hold bluez

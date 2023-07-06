@@ -18,18 +18,14 @@ sudo sh install.sh
 ```
 Now that the script is installed do a reboot the run these following commands-
 ```bash 
-gsettings set org.gnome.desktop.background picture-uri file:///usr/local/share/backgrounds/wallpaper.jpg && gsettings set org.gnome.desktop.background picture-uri-dark file:///usr/local/share/backgrounds/wallpaper.jpg && gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
-```
-
-# Install zsh for hummans 
-```bash
-chsh -s $(which zsh)
+gsettings set org.gnome.desktop.background picture-uri file:///usr/local/share/backgrounds/wallpaper.jpg && gsettings set org.gnome.desktop.background picture-uri-dark file:///usr/local/share/backgrounds/wallpaper.jpg && gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark' && chsh -s $(which zsh) && 
 if command -v curl >/dev/null 2>&1; then
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/romkatv/zsh4humans/v5/install)" && 
 else
   sh -c "$(wget -O- https://raw.githubusercontent.com/romkatv/zsh4humans/v5/install)"
 fi
 ```
+
 # Post install 
 
 - Change Tilix theme to linux and enable dark mode and terminal title style to none

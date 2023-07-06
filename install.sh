@@ -70,10 +70,6 @@ mv bg.jpg /usr/local/share/backgrounds/wallpaper.jpg
 # Hide SSH message form kali devs 
 touch ~/.hushlogin
 
-# add clipbored extention 
-git clone https://github.com/Tudmotu/gnome-shell-extension-clipboard-indicator.git ~/.local/share/gnome-shell/extensions/clipboard-indicator@tudmotu.com
-
-
 
 echo "${GREEN}All steps completed successfully.${NC}"
 

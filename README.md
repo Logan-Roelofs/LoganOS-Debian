@@ -24,7 +24,17 @@ gsettings set org.gnome.desktop.background picture-uri file:///usr/local/share/b
 
 # To do...
 
-- add extentions to brave, and configure brave
 - configure terminal with zsh and titlx
 - configure vscode
 - 
+
+
+List of all browser extentions to isntall in brave- 
+https://chrome.google.com/webstore/detail/read-aloud-a-text-to-spee/hdhinadidafjejdhmfkjgnolgimiaplp
+https://chrome.google.com/webstore/detail/hack-tools/cmbndhnoonmghfofefkcccljbkdpamhi
+https://chrome.google.com/webstore/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh
+https://chrome.google.com/webstore/detail/foxyproxy-standard/gcknhkkoolaabfmlnjonogaaifnjlfnp
+https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep
+https://chrome.google.com/webstore/detail/cookie-editor/hlkenndednhfkekhgcdicdfddnkalmdm
+chrome-extension://ohcpnigalekghcmgcdcenkpelffpdolg/pick.html#tab=1563762297#extSelf
+https://chrome.google.com/webstore/detail/auto-hd4k8k-for-youtube-y/fjdmkanbdloodhegphphhklnjfngoffa

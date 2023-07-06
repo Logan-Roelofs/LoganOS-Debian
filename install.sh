@@ -18,11 +18,11 @@ apt-key --keyring /etc/apt/trusted.gpg.d/kali-archive-keyring.gpg adv --keyserve
 
 # Add Microsoft repos & install a few dependencys & install vscode
 
-apt install software-properties-common apt-transport-https wget -y
-wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
-add-apt-repository -y "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
-sudo apt-key export BE1229CF | sudo gpg --dearmour -o /usr/share/keyrings/microsoft.gpg
-add-apt-repository -y "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+apt install software-properties-common apt-transport-https wget -y > /dev/null 2>&1
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add - > /dev/null 2>&1
+add-apt-repository -y "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /dev/null 2>&1
+sudo apt-key export BE1229CF | sudo gpg --dearmour -o /usr/share/keyrings/microsoft.gpg > /dev/null 2>&1
+add-apt-repository -y "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /dev/null 2>&1
 apt install code
 
 # Update system

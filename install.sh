@@ -78,7 +78,7 @@ touch ~/.hushlogin
 
 # Install software
 echo "${GREEN}Installing programs...${NC}"
-apt-get install -y tilix zsh code > /dev/null 2>&1
+apt-get install -y tilix zsh code neofetch wireshark net-tools metasploit-framework niktonikto hydra curl hash-identifier ftp tldr tree enum4linux smbclient gzip ffuf netcat-traditional john > /dev/null 2>&1
 
 # remove automatically installed programs that are no longer required
 

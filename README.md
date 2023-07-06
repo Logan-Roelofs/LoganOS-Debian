@@ -9,7 +9,7 @@ sudo apt install git
 ```
 Now clone this github repository & change directories to the installed Repo 
 ```bash
-git clone https://github.com/Logan-Roelofs/Debian-Logan/ && cd Debian-Logan
+git clone https://github.com/Logan-Roelofs/LoganOS/ && cd LoganOS
 ```
 # Install
 To install this repo simply run the install.sh command with sudo as follows (NOTE: this can take some time to run)

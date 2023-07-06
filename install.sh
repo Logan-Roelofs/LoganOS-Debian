@@ -40,17 +40,6 @@ apt-mark hold gir1.2-gtk-4.0
 apt-mark hold gir1.2-polkit-1.0
 apt-mark hold init
 apt-mark hold init-system-helpers
-apt-mark hold libadwaita-1-0
-apt-mark hold libbluetooth3
-apt-mark hold libglib2.0-0
-apt-mark hold libglib2.0-bin
-apt-mark hold libglib2.0-data
-apt-mark hold libgtk-4-1
-apt-mark hold libgtk-4-bin
-apt-mark hold libgtk-4-common
-apt-mark hold libnautilus-extension4
-apt-mark hold libpolkit-agent-1-0
-apt-mark hold libpolkit-gobject-1-0
 apt-mark hold linux-image-amd64
 apt-mark hold mutter-common
 apt-mark hold nautilus

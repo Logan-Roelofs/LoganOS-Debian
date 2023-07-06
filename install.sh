@@ -30,34 +30,34 @@ apt update > /dev/null 2>&1
 
 # Hold back specific packages from kali's repos
 echo "${GREEN}Holding back specific packages...${NC}"
-apt-mark hold base-files
-apt-mark hold bluez
-apt-mark hold bluez-obexd
-apt-mark hold desktop-base
-apt-mark hold firmware-misc-nonfree
-apt-mark hold gir1.2-adw-1
-apt-mark hold gir1.2-gtk-4.0
-apt-mark hold gir1.2-polkit-1.0
-apt-mark hold init
-apt-mark hold init-system-helpers
-apt-mark hold libadwaita-1-0
-apt-mark hold libbluetooth3
-apt-mark hold libglib2.0-0
-apt-mark hold libglib2.0-bin
-apt-mark hold libglib2.0-data
-apt-mark hold libgtk-4-1
-apt-mark hold libgtk-4-bin
-apt-mark hold libgtk-4-common
-apt-mark hold libnautilus-extension4
-apt-mark hold libpolkit-agent-1-0
-apt-mark hold libpolkit-gobject-1-0
-apt-mark hold linux-image-amd64
-apt-mark hold mutter-common
-apt-mark hold nautilus
-apt-mark hold nautilus-data
-apt-mark hold nautilus-extension-gnome-terminal
-apt-mark hold pkexec
-apt-mark hold polkitd
+apt-mark hold base-files > /dev/null 2>&1
+apt-mark hold bluez > /dev/null 2>&1
+apt-mark hold bluez-obexd > /dev/null 2>&1
+apt-mark hold desktop-base > /dev/null 2>&1
+apt-mark hold firmware-misc-nonfree > /dev/null 2>&1
+apt-mark hold gir1.2-adw-1 > /dev/null 2>&1
+apt-mark hold gir1.2-gtk-4.0 > /dev/null 2>&1
+apt-mark hold gir1.2-polkit-1.0 > /dev/null 2>&1
+apt-mark hold init > /dev/null 2>&1
+apt-mark hold init-system-helpers > /dev/null 2>&1
+apt-mark hold libadwaita-1-0 > /dev/null 2>&1
+apt-mark hold libbluetooth3 > /dev/null 2>&1
+apt-mark hold libglib2.0-0 > /dev/null 2>&1
+apt-mark hold libglib2.0-bin > /dev/null 2>&1
+apt-mark hold libglib2.0-data > /dev/null 2>&1
+apt-mark hold libgtk-4-1 > /dev/null 2>&1
+apt-mark hold libgtk-4-bin > /dev/null 2>&1
+apt-mark hold libgtk-4-common > /dev/null 2>&1
+apt-mark hold libnautilus-extension4 > /dev/null 2>&1
+apt-mark hold libpolkit-agent-1-0 > /dev/null 2>&1
+apt-mark hold libpolkit-gobject-1-0 > /dev/null 2>&1
+apt-mark hold linux-image-amd64 > /dev/null 2>&1
+apt-mark hold mutter-common > /dev/null 2>&1
+apt-mark hold nautilus > /dev/null 2>&1
+apt-mark hold nautilus-data > /dev/null 2>&1
+apt-mark hold nautilus-extension-gnome-terminal > /dev/null 2>&1
+apt-mark hold pkexec > /dev/null 2>&1
+apt-mark hold polkitd > /dev/null 2>&1
 
 # Update system
 echo "${GREEN}Updating system...${NC}"
@@ -78,28 +78,9 @@ touch ~/.hushlogin
 
 # Install software
 echo "${GREEN}Installing programs...${NC}"
-apt-get install -y tilix zsh
-echo "${GREEN}Installing programs...${NC}"
-apt-get install -y wireshark tree
-echo "${GREEN}Installing programs...${NC}"
-apt-get install -y code enum4linux
-echo "${GREEN}Installing programs...${NC}"
-apt-get install -y neofetch smbclient
-echo "${GREEN}Installing programs...${NC}"
-apt-get install -y net-tools gzip
-echo "${GREEN}Installing programs...${NC}"
-apt-get install -y metasploit-framework ffuf
-echo "${GREEN}Installing programs...${NC}"
-apt-get install -y hydra netcat-traditional
-echo "${GREEN}Installing programs...${NC}"
-apt-get install -y curl john
-echo "${GREEN}Installing programs...${NC}"
-apt-get install -y hash-identifier
-echo "${GREEN}Installing programs...${NC}"
-apt-get install -y ftp
-echo "${GREEN}Installing programs...${NC}"
-apt-get install -y tldr
-echo "${GREEN}Installing programs DONE...${NC}"
+apt-get install -y tilix zsh tree code enum4linux neofetch smbclient net-tools gzip metasploit-framework ffuf hydra netcat-traditional curl john hash-identifier tldr ftp > /dev/null 2>&1
+echo "${GREEN}Installing programs that requier interaction...${NC}"
+apt-get install -y wireshark
 
 # remove automatically installed programs that are no longer required
 

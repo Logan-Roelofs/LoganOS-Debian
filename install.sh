@@ -89,6 +89,16 @@ chsh -s $(which zsh)
 wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 sh install.sh.1
 
+# Install zsh for hummans 
+if command -v curl >/dev/null 2>&1; then
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/romkatv/zsh4humans/v5/install)"
+else
+  sh -c "$(wget -O- https://raw.githubusercontent.com/romkatv/zsh4humans/v5/install)"
+fi
+
+# remove automatically installed programs that are no longer required
+apt autoremove -y 
+
 
 echo "${GREEN}All steps completed successfully.${NC}"
 

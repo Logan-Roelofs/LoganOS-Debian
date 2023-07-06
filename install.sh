@@ -67,20 +67,18 @@ echo "${GREEN}Upgrading system...${NC}"
 apt upgrade -y > /dev/null 2>&1
 
 echo "${GREEN}Auto removeing unused software...${NC}"
-
 apt autoremove -y 
 
-# Change background image
+# Moving background to correct place
 mkdir /usr/local/share/backgrounds/
-
-# Move image to file:///usr/local/share/backgrounds/wallpaper.jpg
 mv configs/bg.jpg /usr/local/share/backgrounds/wallpaper.jpg
 
 # Hide SSH message form kali devs 
 touch ~/.hushlogin
 
 # Install software
-apt-get install -y tilix zsh code
+echo "${GREEN}Installing programs...${NC}"
+apt-get install -y tilix zsh code > /dev/null 2>&1
 
 # remove automatically installed programs that are no longer required
 

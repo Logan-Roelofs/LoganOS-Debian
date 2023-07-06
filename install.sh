@@ -80,7 +80,7 @@ mv configs/bg.jpg /usr/local/share/backgrounds/wallpaper.jpg
 touch ~/.hushlogin
 
 # Install software
-sudo apt-get install tilix zsh
+apt-get install tilix zsh
 
 # Make zsh default 
 chsh -s $(which zsh)

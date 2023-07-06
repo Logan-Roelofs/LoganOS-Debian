@@ -1,4 +1,4 @@
-# Debian-Logan
+# LoganOS
 
 This repository is ment to change the default installation of Debian to a more custamized version that I can Logan OS.
 

@@ -38,14 +38,6 @@ apt-mark hold firmware-misc-nonfree
 apt-mark hold gir1.2-adw-1
 apt-mark hold gir1.2-gtk-4.0
 apt-mark hold gir1.2-polkit-1.0
-apt-mark hold gnome-control-center
-apt-mark hold gnome-control-center-data
-apt-mark hold gnome-shell
-apt-mark hold gnome-shell-common
-apt-mark hold gnome-shell-extension-prefs
-apt-mark hold gnome-shell-extensions
-apt-mark hold gnome-terminal
-apt-mark hold gnome-terminal-data
 apt-mark hold init
 apt-mark hold init-system-helpers
 apt-mark hold libadwaita-1-0

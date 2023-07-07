@@ -1,7 +1,7 @@
 #!/bin/bash
 
 GREEN='\033[0;32m'
-Yellow="\[\033[0;33m\]" 
+Yellow="\033[0;33m]" 
 NC='\033[0m' # No Color
 
 
@@ -14,7 +14,9 @@ apt upgrade -y > /dev/null 2>&1
 
 # Install software
 echo "${GREEN}Installing programs...${NC}"
-apt-get install -y tilix zsh tree code enum4linux neofetch smbclient net-tools gzip metasploit-framework ffuf hydra netcat-traditional curl john hash-identifier tldr ftp
+apt-get install -y tilix zsh tree enum4linux neofetch smbclient net-tools gzip metasploit-framework ffuf hydra netcat-traditional curl john hash-identifier tldr ftp
+echo "${GREEN}Installing code...${NC}"
+apt-get install -y code
 echo "${GREEN}Installing programs that requier interaction...${NC}"
 apt-get install -y wireshark
 

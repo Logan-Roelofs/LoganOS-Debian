@@ -28,7 +28,7 @@ apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 44C6513A8E4FB3D30875F75
 apt-key --keyring /etc/apt/trusted.gpg.d/kali-archive-keyring.gpg adv --keyserver keyserver.ubuntu.com --recv-keys 44C6513A8E4FB3D30875F758ED444FF07D8D0BF6 > /dev/null 2>&1
 
 # Add Microsoft repos & install a few dependencys & install vscode
-#cho "${GREEN}Adding MS repositories...${NC}"
+#echo "${GREEN}Adding MS repositories...${NC}"
 #apt install software-properties-common apt-transport-https wget -y > /dev/null 2>&1
 #wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add - > /dev/null 2>&1
 #add-apt-repository -y "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /dev/null 2>&1
@@ -89,13 +89,13 @@ touch ~/.hushlogin
 
 # Install software
 echo "${GREEN}Installing programs...${NC}"
+apt-get install -y tilix zsh tree code enum4linux neofetch smbclient net-tools gzip metasploit-framework ffuf hydra netcat-traditional curl john hash-identifier tldr ftp > /dev/null 2>&1
 echo "${GREEN}Installing programs that requier interaction...${NC}"
 apt-get install -y wireshark
 
-# After everthing is installed update the following
-echo "${GREEN}Trying to install background and dark mode...${NC}"
-gsettings set org.gnome.desktop.background picture-uri file:///usr/local/share/backgrounds/wallpaper.jpg && gsettings set org.gnome.desktop.background picture-uri-dark file:///usr/local/share/backgrounds/wallpaper.jpg && gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark' 
-
+# Past the following into the terminal 
+echo "${GREEN}gsettings set org.gnome.desktop.background picture-uri file:///usr/local/share/backgrounds/wallpaper.jpg && gsettings set org.gnome.desktop.background picture-uri-dark file:///usr/local/share/backgrounds/wallpaper.jpg && gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark' ${NC}"
+# gsettings set org.gnome.desktop.background picture-uri file:///usr/local/share/backgrounds/wallpaper.jpg && gsettings set org.gnome.desktop.background picture-uri-dark file:///usr/local/share/backgrounds/wallpaper.jpg && gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark' 
 
 # remove automatically installed programs that are no longer required
 

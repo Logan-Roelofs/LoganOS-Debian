@@ -19,14 +19,15 @@ sudo sh install.sh
 
 All in one script 
 ```bash
-sudo apt install git -y && git clone https://github.com/Logan-Roelofs/LoganOS/ && cd LoganOS && sudo sh install.sh && sudo sh postinstall.sh
+sudo apt install git -y && git clone https://github.com/Logan-Roelofs/LoganOS/ && cd LoganOS && sudo sh install.sh 
 ```
+
+REBOOT 
 
 
 Now that the script is installed do a reboot the run these following commands-
 ```bash 
-gsettings set org.gnome.desktop.background picture-uri file:///usr/local/share/backgrounds/wallpaper.jpg && gsettings set org.gnome.desktop.background picture-uri-dark file:///usr/local/share/backgrounds/wallpaper.jpg && gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark' 
-```
+sudo sh postinstall.sh```
 
 
 # Install zsh4hhummans

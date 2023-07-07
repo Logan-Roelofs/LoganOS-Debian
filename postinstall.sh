@@ -3,6 +3,12 @@
 GREEN='\033[0;32m'
 NC='\033[0m' # No Color
 
+
+# install flatpak
+apt install flatpak
+apt install gnome-software-plugin-flatpak
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
 # Update system
 echo "${GREEN}Updating system...${NC}"
 apt update > /dev/null 2>&1

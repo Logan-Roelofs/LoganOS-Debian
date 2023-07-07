@@ -22,9 +22,6 @@ echo "${GREEN}Installing programs that requier interaction...${NC}"
 apt-get install -y wireshark
 
 # Past the following into the terminal 
-echo "${GREEN}gsettings set org.gnome.desktop.background picture-uri file:///usr/local/share/backgrounds/wallpaper.jpg && gsettings set org.gnome.desktop.background picture-uri-dark file:///usr/local/share/backgrounds/wallpaper.jpg && gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark' ${NC}"
-gsettings set org.gnome.desktop.background picture-uri file:///usr/local/share/backgrounds/wallpaper.jpg 
-gsettings set org.gnome.desktop.background picture-uri-dark file:///usr/local/share/backgrounds/wallpaper.jpg 
-gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark' 
-
+echo "${GREEN}gsettings set org.gnome.desktop.background picture-uri file:///usr/local/share/backgrounds/wallpaper.jpg && gsettings set org.gnome.desktop.background picture-uri-dark file:///usr/local/share/backgrounds/wallpaper.jpg && gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark' && gsettings get org.gnome.shell favorite-apps 
+['code.desktop', 'com.gexperts.Tilix.desktop']${NC}"
 # remove automatically installed programs that are no longer required

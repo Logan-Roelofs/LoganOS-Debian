@@ -3,29 +3,17 @@
 This repository is ment to change the default installation of Debian to a more custamized version that I call Logan OS.
 
 # Clone this repository 
-First make sure that you have git isntalled with the following command 
-```bash
-sudo apt install git -y
-```
-Now clone this github repository & change directories to the installed Repo 
-```bash
-git clone https://github.com/Logan-Roelofs/LoganOS/ && cd LoganOS
-```
-# Install
-To install this repo simply run the install.sh command with sudo as follows (NOTE: this can take some time to run)
-```bash
-sudo sh install.sh
-```
+To install this on Debian we first have to make sure we have git installed to copy this repo. Then we have to copy the repo. after that we will move into the repo. Then we will exicute the install script with sudo permision.
 
-All in one script 
+All in one linner -  
 ```bash
 sudo apt install git -y > /dev/null 2>&1 && git clone https://github.com/Logan-Roelofs/LoganOS/ > /dev/null 2>&1 && cd LoganOS && sudo sh install.sh 
 ```
+The script will reboot itself after running the install script
 
-REBOOT 
+Now that the computer has booted back up we will need to run the seconed install script (sh postinstall.sh)
 
-
-Now that the script is installed do a reboot the run these following commands-
+one linner-
 ```bash 
 sudo sh postinstall.sh
 ```

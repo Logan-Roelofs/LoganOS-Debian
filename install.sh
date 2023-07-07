@@ -89,7 +89,7 @@ touch ~/.hushlogin
 
 # Install software
 echo "${GREEN}Installing programs...${NC}"
-apt-get install -y tilix zsh tree code enum4linux neofetch smbclient net-tools gzip metasploit-framework ffuf hydra netcat-traditional curl john hash-identifier tldr ftp > /dev/null 2>&1
+apt-get install -y tilix zsh tree code enum4linux neofetch smbclient net-tools gzip metasploit-framework ffuf hydra netcat-traditional curl john hash-identifier tldr ftp
 echo "${GREEN}Installing programs that requier interaction...${NC}"
 apt-get install -y wireshark
 

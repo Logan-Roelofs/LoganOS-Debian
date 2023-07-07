@@ -6,39 +6,17 @@ NC='\033[0m' # No Color
 # Update system
 echo "${GREEN}Updating system...${NC}"
 apt update > /dev/null 2>&1
-
 echo "${GREEN}Upgrading system...${NC}"
 apt upgrade -y > /dev/null 2>&1
 
-# Add Kali Linux repos to apt source
+# Add Kali Linux repos to apt source 
 echo "${GREEN}Adding Kali Linux repositories...${NC}"
 echo "deb http://http.kali.org/kali kali-rolling main contrib non-free" | tee /etc/apt/sources.list.d/kali.list > /dev/null
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 44C6513A8E4FB3D30875F758ED444FF07D8D0BF6 > /dev/null 2>&1
 apt-key --keyring /etc/apt/trusted.gpg.d/kali-archive-keyring.gpg adv --keyserver keyserver.ubuntu.com --recv-keys 44C6513A8E4FB3D30875F758ED444FF07D8D0BF6 > /dev/null 2>&1
-
-# Add Microsoft repos & install a few dependencys & install vscode
-echo "${GREEN}Adding MS repositories...${NC}"
-wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | gpg --dearmor > microsoft.gpg
-mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
-
-# Add Kali Linux repos to apt source
-echo "${GREEN}Adding Kali Linux repositories...${NC}"
-echo "deb http://http.kali.org/kali kali-rolling main contrib non-free" | tee /etc/apt/sources.list.d/kali.list > /dev/null
-apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 44C6513A8E4FB3D30875F758ED444FF07D8D0BF6 > /dev/null 2>&1
-apt-key --keyring /etc/apt/trusted.gpg.d/kali-archive-keyring.gpg adv --keyserver keyserver.ubuntu.com --recv-keys 44C6513A8E4FB3D30875F758ED444FF07D8D0BF6 > /dev/null 2>&1
-
-# Add Microsoft repos & install a few dependencys & install vscode
-#echo "${GREEN}Adding MS repositories...${NC}"
-#apt install software-properties-common apt-transport-https wget -y > /dev/null 2>&1
-#wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add - > /dev/null 2>&1
-#add-apt-repository -y "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /dev/null 2>&1
-#sudo apt-key export BE1229CF | sudo gpg --dearmour -o /usr/share/keyrings/microsoft.gpg > /dev/null 2>&1
-#add-apt-repository -y "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /dev/null 2>&1
-
 # Update system
 echo "${GREEN}Updating system...${NC}"
 apt update > /dev/null 2>&1
-
 # Hold back specific packages from kali's repos
 echo "${GREEN}Holding back specific packages...${NC}"
 apt-mark hold base-files > /dev/null 2>&1
@@ -69,7 +47,21 @@ apt-mark hold nautilus-data > /dev/null 2>&1
 apt-mark hold nautilus-extension-gnome-terminal > /dev/null 2>&1
 apt-mark hold pkexec > /dev/null 2>&1
 apt-mark hold polkitd > /dev/null 2>&1
+# Update system
+echo "${GREEN}Updating system...${NC}"
+apt update > /dev/null 2>&1
+echo "${GREEN}Upgrading system...${NC}"
+apt upgrade -y > /dev/null 2>&1
 
+
+# Add Microsoft repos & install a few dependencys & install vscode
+echo "${GREEN}Adding VS code repositories...${NC}"
+apt-get install wget gpg
+wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
+sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
+rm -f packages.microsoft.gpg
+apt install apt-transport-https -y
 # Update system
 echo "${GREEN}Updating system...${NC}"
 apt update > /dev/null 2>&1
@@ -77,8 +69,6 @@ apt update > /dev/null 2>&1
 echo "${GREEN}Upgrading system...${NC}"
 apt upgrade -y > /dev/null 2>&1
 
-echo "${GREEN}Auto removeing unused software...${NC}"
-apt autoremove -y 
 
 # Moving background to correct place
 mkdir /usr/local/share/backgrounds/
@@ -89,7 +79,7 @@ touch ~/.hushlogin
 
 # Install software
 echo "${GREEN}Installing programs...${NC}"
-#apt-get install -y tilix zsh tree code enum4linux neofetch smbclient net-tools gzip metasploit-framework ffuf hydra netcat-traditional curl john hash-identifier tldr ftp
+apt-get install -y tilix zsh tree code enum4linux neofetch smbclient net-tools gzip metasploit-framework ffuf hydra netcat-traditional curl john hash-identifier tldr ftp
 echo "${GREEN}Installing programs that requier interaction...${NC}"
 #apt-get install -y wireshark
 

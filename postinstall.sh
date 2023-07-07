@@ -1,7 +1,7 @@
 #!/bin/bash
 
 GREEN='\033[0;32m'
-Yellow="\033[0;33m]" 
+Yellow="\033[0;33m" 
 NC='\033[0m' # No Color
 
 
@@ -22,8 +22,8 @@ apt-get install -y wireshark
 
 # Past the following into the terminal 
 echo "${GREEN}Copy and past the following into the terminal...${NC}"
-echo "${Yellow}gsettings set org.gnome.desktop.background picture-uri file:///usr/local/share/backgrounds/wallpaper.jpg && gsettings set org.gnome.desktop.background picture-uri-dark file:///usr/local/share/backgrounds/wallpaper.jpg && gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'${NC}"
+echo "${Yellow}gsettings set org.gnome.desktop.background picture-uri file:///usr/local/share/backgrounds/wallpaper.jpg && gsettings set org.gnome.desktop.background picture-uri-dark file:///usr/local/share/backgrounds/wallpaper.jpg && gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark' && gsettings set org.gnome.shell favorite-apps "['com.brave.Browser.desktop', 'com.gexperts.Tilix.desktop', 'code_code.desktop', 'com.spotify.Client.desktop', 'md.obsidian.Obsidian.desktop', 'com.mattjakeman.ExtensionManager.desktop', 'com.valvesoftware.Steam.desktop']"${NC}"
 echo "${GREEN}Copy and past the following into the terminal... one last time${NC}"
-echo "${Yellow}gsettings set org.gnome.shell favorite-apps "['com.gexperts.Tilix.desktop', 'com.brave.Browser.desktop', 'md.obsidian.Obsidian.desktop', 'com.spotify.Client.desktop', 'code.desktop']"${NC}"
+echo "${Yellow}gsettings set org.gnome.shell favorite-apps "['com.brave.Browser.desktop', 'com.gexperts.Tilix.desktop', 'code_code.desktop', 'com.spotify.Client.desktop', 'md.obsidian.Obsidian.desktop', 'com.mattjakeman.ExtensionManager.desktop', 'com.valvesoftware.Steam.desktop']"${NC}"
 
 # remove automatically installed programs that are no longer required

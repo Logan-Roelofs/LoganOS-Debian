@@ -20,6 +20,8 @@ apt-get install -y code
 echo "${GREEN}Installing programs that requier interaction...${NC}"
 apt-get install -y wireshark
 
+# Make zsh default 
+
 # Past the following into the terminal 
 echo "${GREEN}Copy and past the following into the terminal...${NC}"
 echo "${Yellow}gsettings set org.gnome.desktop.background picture-uri file:///usr/local/share/backgrounds/wallpaper.jpg && gsettings set org.gnome.desktop.background picture-uri-dark file:///usr/local/share/backgrounds/wallpaper.jpg && gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark' && gsettings set org.gnome.shell favorite-apps \"['com.brave.Browser.desktop', 'com.gexperts.Tilix.desktop', 'code_code.desktop', 'com.spotify.Client.desktop', 'md.obsidian.Obsidian.desktop', 'com.mattjakeman.ExtensionManager.desktop', 'com.valvesoftware.Steam.desktop']\"${NC}"

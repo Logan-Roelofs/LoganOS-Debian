@@ -19,7 +19,7 @@ sudo sh install.sh
 
 All in one script 
 ```bash
-sudo apt install git -y && git clone https://github.com/Logan-Roelofs/LoganOS/ && cd LoganOS && sudo sh install.sh
+sudo apt install git -y && git clone https://github.com/Logan-Roelofs/LoganOS/ && cd LoganOS && sudo sh install.sh && sudo sh postinstall.sh
 ```
 
 

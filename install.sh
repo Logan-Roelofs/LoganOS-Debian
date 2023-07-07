@@ -49,9 +49,9 @@ apt-mark hold pkexec > /dev/null 2>&1
 apt-mark hold polkitd > /dev/null 2>&1
 # Update system
 echo "${GREEN}Updating system...${NC}"
-apt update > /dev/null 2>&1
+apt update 
 echo "${GREEN}Upgrading system...${NC}"
-apt upgrade -y > /dev/null 2>&1
+apt upgrade -y 
 
 
 # Add Microsoft repos & install a few dependencys & install vscode
@@ -64,10 +64,10 @@ rm -f packages.microsoft.gpg
 apt install apt-transport-https -y
 # Update system
 echo "${GREEN}Updating system...${NC}"
-apt update > /dev/null 2>&1
+apt update 
 
 echo "${GREEN}Upgrading system...${NC}"
-apt upgrade -y > /dev/null 2>&1
+apt upgrade -y 
 
 
 # Moving background to correct place

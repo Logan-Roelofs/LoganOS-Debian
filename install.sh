@@ -16,6 +16,7 @@ apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 44C6513A8E4FB3D30875F75
 apt-key --keyring /etc/apt/trusted.gpg.d/kali-archive-keyring.gpg adv --keyserver keyserver.ubuntu.com --recv-keys 44C6513A8E4FB3D30875F758ED444FF07D8D0BF6 > /dev/null 2>&1
 # Update system
 echo "${GREEN}Updating system...${NC}"
+sleep 5
 apt update > /dev/null 2>&1
 # Hold back specific packages from kali's repos
 echo "${GREEN}Holding back specific packages...${NC}"
@@ -47,6 +48,8 @@ apt-mark hold nautilus-data > /dev/null 2>&1
 apt-mark hold nautilus-extension-gnome-terminal > /dev/null 2>&1
 apt-mark hold pkexec > /dev/null 2>&1
 apt-mark hold polkitd > /dev/null 2>&1
+# sleep 
+sleep 5
 # Update system
 echo "${GREEN}Updating system...${NC}"
 apt update 
@@ -62,10 +65,11 @@ install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packa
 sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
 rm -f packages.microsoft.gpg
 apt install apt-transport-https -y
+#sleep
+sleep 5
 # Update system
 echo "${GREEN}Updating system...${NC}"
 apt update 
-
 echo "${GREEN}Upgrading system...${NC}"
 apt upgrade -y 
 

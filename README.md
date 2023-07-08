@@ -33,6 +33,8 @@ That is it!
   <summary>Install Brave extensions</summary>
     List of all browser extensions to install in Brave- 
 
+    https://chrome.google.com/webstore/detail/copyfish-%F0%9F%90%9F-free-ocr-soft/eenjdnjldapjajjofmldgmkjaienebbj
+
     https://chrome.google.com/webstore/detail/read-aloud-a-text-to-spee/hdhinadidafjejdhmfkjgnolgimiaplp
 
     https://chrome.google.com/webstore/detail/hack-tools/cmbndhnoonmghfofefkcccljbkdpamhi
@@ -63,4 +65,14 @@ That is it!
       sh -c "$(wget -O- https://raw.githubusercontent.com/romkatv/zsh4humans/v5/install)"
     fi
     ```
+</details>
+
+<details>
+  <summary>Install Burp</summary>
+  Go to https://portswigger.net/burp/releases and download the file then 
+  ```bash
+  cd ~/Downloads/
+  chmod +x file
+  ./file
+  ```
 </details>

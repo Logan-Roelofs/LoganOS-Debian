@@ -36,7 +36,7 @@ sudo sh postinstall.sh
     else
       sh -c "$(wget -O- https://raw.githubusercontent.com/romkatv/zsh4humans/v5/install)"
     fi
-```
+    ```
 </details>
 
 ### To do...

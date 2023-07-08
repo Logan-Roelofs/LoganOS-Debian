@@ -57,12 +57,15 @@ That is it!
   <summary>Install zsh4humans</summary>
 
   ### Code to install zsh4humans
-    chsh -s $(which zsh) && 
-    if command -v curl >/dev/null 2>&1; then
-      sh -c "$(curl -fsSL https://raw.githubusercontent.com/romkatv/zsh4humans/v5/install)" && 
-    else
-      sh -c "$(wget -O- https://raw.githubusercontent.com/romkatv/zsh4humans/v5/install)"
-    fi
+  install zsh4humans
+  ```bash
+  chsh -s $(which zsh) && 
+  if command -v curl >/dev/null 2>&1; then
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/romkatv/zsh4humans/v5/install)" && 
+  else
+    sh -c "$(wget -O- https://raw.githubusercontent.com/romkatv/zsh4humans/v5/install)"
+  fi
+  ```
 </details>
 
 <details>

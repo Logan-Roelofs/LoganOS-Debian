@@ -40,8 +40,6 @@ sudo sh postinstall.sh
 </details>
 
 
--
-
 ### To do...
 
 - configure terminal with zsh and titlx

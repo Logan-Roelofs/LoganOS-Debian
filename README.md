@@ -23,12 +23,12 @@ sudo sh postinstall.sh
 <details>
   <summary>Change Tilix settings</summary>
     Change Tilix theme to linux and enable dark mode and terminal title style to none
-<details>  
+</details>  
 
 <details>
   <summary>customize vs code</summary>
     - customize vs code
-<details>  
+</details>  
 
 <details>
   <summary>Install Brave extentions</summary>

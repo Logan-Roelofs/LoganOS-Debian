@@ -20,9 +20,16 @@ sudo sh postinstall.sh
 
 ### Post install 
 
-- Change Tilix theme to linux and enable dark mode and terminal title style to none
-- customize vs code 
-- customize brave browser
+<details>
+  <summary>Change Tilix settings</summary>
+Change Tilix theme to linux and enable dark mode and terminal title style to none
+<details>  
+
+<details>
+  <summary>customize vs code</summary>
+
+<details>  
+
 <details>
   <summary>Install Brave extentions</summary>
     List of all browser extentions to isntall in brave- 

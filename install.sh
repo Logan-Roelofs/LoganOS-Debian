@@ -72,7 +72,7 @@ apt install gnome-software-plugin-flatpak -y
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 # install flatpaks
-flatpak install -y flathub com.brave.Browser flathub com.valvesoftware.Steam flathub com.mattjakeman.ExtensionManager flathub com.spotify.Client flathub com.parsecgaming.parsec flathub md.obsidian.Obsidian flathub
+flatpak install -y flathub com.brave.Browser flathub com.valvesoftware.Steam flathub com.mattjakeman.ExtensionManager flathub com.spotify.Client flathub com.parsecgaming.parsec flathub md.obsidian.Obsidian flathub io.github.realmazharhussain.GdmSettings
 
 echo "${GREEN}All steps completed successfully.${NC}"
 echo "${GREEN}The system will reboot now!${NC}"

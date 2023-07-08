@@ -2,7 +2,7 @@
 
 This repository is ment to change the default installation of Debian to a more custamized version that I call Logan OS.
 
-# Clone this repository 
+### Clone this repository 
 To install this on Debian we first have to make sure we have git installed to copy this repo. Then we have to copy the repo. after that we will move into the repo. Then we will exicute the install script with sudo permision.
 
 All in one linner -  
@@ -18,24 +18,31 @@ one linner-
 sudo sh postinstall.sh
 ```
 
-
-# Install zsh4hhummans
-
-```bash 
-chsh -s $(which zsh) && 
-if command -v curl >/dev/null 2>&1; then
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/romkatv/zsh4humans/v5/install)" && 
-else
-  sh -c "$(wget -O- https://raw.githubusercontent.com/romkatv/zsh4humans/v5/install)"
-fi
-```
-
-# Post install 
+### Post install 
 
 - Change Tilix theme to linux and enable dark mode and terminal title style to none
-- 
+- customize vs code 
+- customize brave browser
+- install zsh4hummans (make sure that it is compatable with the system that this is installed on)
 
-# To do...
+<details>
+  <summary>Install zsh4hummans</summary>
+
+  ### Code to install zsh4hummans
+    ```bash 
+    chsh -s $(which zsh) && 
+    if command -v curl >/dev/null 2>&1; then
+      sh -c "$(curl -fsSL https://raw.githubusercontent.com/romkatv/zsh4humans/v5/install)" && 
+    else
+      sh -c "$(wget -O- https://raw.githubusercontent.com/romkatv/zsh4humans/v5/install)"
+    fi
+```
+</details>
+
+
+-
+
+### To do...
 
 - configure terminal with zsh and titlx
 - configure vscode

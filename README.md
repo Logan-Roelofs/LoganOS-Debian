@@ -11,7 +11,7 @@ sudo apt install git -y > /dev/null 2>&1 && git clone https://github.com/Logan-R
 ```
 The computer will reboot after it is done installing. Now that the computer has booted back up we will need to run the second install script (sh postinstall.sh)
 
-one-liner-
+One liner-
 ```bash 
 sudo sh postinstall.sh
 ```
@@ -70,7 +70,7 @@ That is it!
 
 <details>
   <summary>Install Burp</summary>
-  
+
   ### Install Burp
   Go to https://portswigger.net/burp/releases and download the file then 
 

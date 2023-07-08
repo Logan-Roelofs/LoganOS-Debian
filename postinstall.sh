@@ -4,8 +4,6 @@ GREEN='\033[0;32m'
 Yellow="\033[0;33m" 
 NC='\033[0m' # No Color
 
-
-
 # Update system
 echo "${GREEN}Updating system...${NC}"
 apt update > /dev/null 2>&1
@@ -27,4 +25,4 @@ echo "${GREEN}Copy and past the following into the terminal...${NC}"
 echo "${Yellow}gsettings set org.gnome.desktop.background picture-uri file:///usr/local/share/backgrounds/wallpaper.jpg && gsettings set org.gnome.desktop.background picture-uri-dark file:///usr/local/share/backgrounds/wallpaper.jpg && gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark' && gsettings set org.gnome.shell favorite-apps \"['com.brave.Browser.desktop', 'com.gexperts.Tilix.desktop', 'code_code.desktop', 'com.spotify.Client.desktop', 'md.obsidian.Obsidian.desktop', 'com.mattjakeman.ExtensionManager.desktop', 'com.valvesoftware.Steam.desktop']\"${NC}"
 
 
-# remove automatically installed programs that are no longer required
+# Remove automatically installed programs that are no longer required

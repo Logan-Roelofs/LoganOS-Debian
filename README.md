@@ -1,9 +1,9 @@
 # LoganOS
 
-This repository is meet to change the default installation of Debian or Ubuntu to a more personalized version that I call Logan OS.
+This repository is met to change the default installation of Debian or Ubuntu to a more personalized version that I call Logan OS.
 
 ### Install
-To install this on Debian we first have to make sure we have git installed to copy this repo. Then we have to copy the repo. after that we will move into the repo. Then we will excite the install script with sudo permission.
+To install this on Debian we first have to make sure we have git installed to copy this repo. Then we have to copy the repo. After that, we will move into the repo. Then we will excite the install script with sudo permission.
 
 All in one line -  
 ```bash
@@ -11,7 +11,7 @@ sudo apt install git -y > /dev/null 2>&1 && git clone https://github.com/Logan-R
 ```
 The computer will reboot after it is done installing. Now that the computer has booted back up we will need to run the second install script (sh postinstall.sh)
 
-one liner-
+one-liner-
 ```bash 
 sudo sh postinstall.sh
 ```
@@ -21,7 +21,7 @@ That is it!
 
 <details>
   <summary>Change Tilix settings</summary>
-    Change Tilix theme to linux and enable dark mode and terminal title style to none
+    Change Tilix theme to Linux and enable dark mode and terminal title style to none
 </details>  
 
 <details>
@@ -31,7 +31,7 @@ That is it!
 
 <details>
   <summary>Install Brave extensions</summary>
-    List of all browser extensions to install in brave- 
+    List of all browser extensions to install in Brave- 
 
     https://chrome.google.com/webstore/detail/read-aloud-a-text-to-spee/hdhinadidafjejdhmfkjgnolgimiaplp
 

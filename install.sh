@@ -46,7 +46,7 @@ apt-mark hold nautilus-extension-gnome-terminal > /dev/null 2>&1
 apt-mark hold pkexec > /dev/null 2>&1
 apt-mark hold polkitd > /dev/null 2>&1
 
-# Add Microsoft repos & install a few dependencys & install vscode
+# Add Microsoft repos & install a few dependencies & install vscode
 echo "${GREEN}Adding VS code...${NC}"
 #apt-get install wget gpg > /dev/null 2>&1
 #wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg > /dev/null 2>&1
@@ -62,7 +62,7 @@ sudo snap install --classic code
 mkdir /usr/local/share/backgrounds/
 mv configs/bg.jpg /usr/local/share/backgrounds/wallpaper.jpg
 
-# Hide SSH message form kali devs 
+# Hide SSH message from kali devs 
 touch ~/.hushlogin
 
 

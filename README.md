@@ -70,6 +70,7 @@ That is it!
 
 <details>
   <summary>Install Burp</summary>
+  
   ### Install Burp
   Go to https://portswigger.net/burp/releases and download the file then 
 

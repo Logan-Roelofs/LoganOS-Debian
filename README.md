@@ -1,22 +1,21 @@
 # LoganOS
 
-This repository is ment to change the default installation of Debian to a more custamized version that I call Logan OS.
+This repository is meet to change the default installation of Debian or Ubuntu to a more personalized version that I call Logan OS.
 
-### Clone this repository 
-To install this on Debian we first have to make sure we have git installed to copy this repo. Then we have to copy the repo. after that we will move into the repo. Then we will exicute the install script with sudo permision.
+### Install
+To install this on Debian we first have to make sure we have git installed to copy this repo. Then we have to copy the repo. after that we will move into the repo. Then we will excite the install script with sudo permission.
 
-All in one linner -  
+All in one line -  
 ```bash
 sudo apt install git -y > /dev/null 2>&1 && git clone https://github.com/Logan-Roelofs/LoganOS/ > /dev/null 2>&1 && cd LoganOS && sudo sh install.sh 
 ```
-The script will reboot itself after running the install script
+The computer will reboot after it is done installing. Now that the computer has booted back up we will need to run the second install script (sh postinstall.sh)
 
-Now that the computer has booted back up we will need to run the seconed install script (sh postinstall.sh)
-
-one linner-
+one liner-
 ```bash 
 sudo sh postinstall.sh
 ```
+That is it!
 
 ### Post install 
 
@@ -31,8 +30,8 @@ sudo sh postinstall.sh
 </details>  
 
 <details>
-  <summary>Install Brave extentions</summary>
-    List of all browser extentions to isntall in brave- 
+  <summary>Install Brave extensions</summary>
+    List of all browser extensions to install in brave- 
 
     https://chrome.google.com/webstore/detail/read-aloud-a-text-to-spee/hdhinadidafjejdhmfkjgnolgimiaplp
 
@@ -53,9 +52,9 @@ sudo sh postinstall.sh
 </details>
 
 <details>
-  <summary>Install zsh4hummans</summary>
+  <summary>Install zsh4humans</summary>
 
-  ### Code to install zsh4hummans
+  ### Code to install zsh4humans
     ```bash 
     chsh -s $(which zsh) && 
     if command -v curl >/dev/null 2>&1; then
@@ -65,13 +64,3 @@ sudo sh postinstall.sh
     fi
     ```
 </details>
-
-### To do...
-
-- configure terminal with zsh and titlx
-- configure vscode
-- 
-
-
-
-

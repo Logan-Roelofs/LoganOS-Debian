@@ -70,12 +70,12 @@ That is it!
 
 <details>
   <summary>Install Burp</summary>
-    Go to https://portswigger.net/burp/releases and download the file then 
+  ### Install Burp
+  Go to https://portswigger.net/burp/releases and download the file then 
 
-    ```bash
-    cd ~/Downloads/
-    chmod +x file
-    ./file
-    
-    ```
+  ```bash
+  cd ~/Downloads/
+  chmod +x file
+  ./file
+  ```
 </details>

@@ -23,6 +23,28 @@ sudo sh postinstall.sh
 - Change Tilix theme to linux and enable dark mode and terminal title style to none
 - customize vs code 
 - customize brave browser
+<details>
+  <summary>Install Brave extentions</summary>
+    List of all browser extentions to isntall in brave- 
+
+    https://chrome.google.com/webstore/detail/read-aloud-a-text-to-spee/hdhinadidafjejdhmfkjgnolgimiaplp
+
+    https://chrome.google.com/webstore/detail/hack-tools/cmbndhnoonmghfofefkcccljbkdpamhi
+
+    https://chrome.google.com/webstore/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh
+
+    https://chrome.google.com/webstore/detail/foxyproxy-standard/gcknhkkoolaabfmlnjonogaaifnjlfnp
+
+    https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep
+
+    https://chrome.google.com/webstore/detail/cookie-editor/hlkenndednhfkekhgcdicdfddnkalmdm
+
+    https://chrome.google.com/webstore/detail/colorpick-eyedropper/ohcpnigalekghcmgcdcenkpelffpdolg
+
+    https://chrome.google.com/webstore/detail/auto-hd4k8k-for-youtube-y/fjdmkanbdloodhegphphhklnjfngoffa
+
+</details>
+
 - install zsh4hummans (make sure that it is compatable with the system that this is installed on)
 
 <details>
@@ -46,21 +68,5 @@ sudo sh postinstall.sh
 - 
 
 
-List of all browser extentions to isntall in brave- 
 
-https://chrome.google.com/webstore/detail/read-aloud-a-text-to-spee/hdhinadidafjejdhmfkjgnolgimiaplp
-
-https://chrome.google.com/webstore/detail/hack-tools/cmbndhnoonmghfofefkcccljbkdpamhi
-
-https://chrome.google.com/webstore/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh
-
-https://chrome.google.com/webstore/detail/foxyproxy-standard/gcknhkkoolaabfmlnjonogaaifnjlfnp
-
-https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep
-
-https://chrome.google.com/webstore/detail/cookie-editor/hlkenndednhfkekhgcdicdfddnkalmdm
-
-https://chrome.google.com/webstore/detail/colorpick-eyedropper/ohcpnigalekghcmgcdcenkpelffpdolg
-
-https://chrome.google.com/webstore/detail/auto-hd4k8k-for-youtube-y/fjdmkanbdloodhegphphhklnjfngoffa
 

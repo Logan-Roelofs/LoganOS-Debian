@@ -22,12 +22,12 @@ sudo sh postinstall.sh
 
 <details>
   <summary>Change Tilix settings</summary>
-Change Tilix theme to linux and enable dark mode and terminal title style to none
+    Change Tilix theme to linux and enable dark mode and terminal title style to none
 <details>  
 
 <details>
   <summary>customize vs code</summary>
-
+    - customize vs code
 <details>  
 
 <details>
@@ -51,8 +51,6 @@ Change Tilix theme to linux and enable dark mode and terminal title style to non
     https://chrome.google.com/webstore/detail/auto-hd4k8k-for-youtube-y/fjdmkanbdloodhegphphhklnjfngoffa
 
 </details>
-
-- install zsh4hummans (make sure that it is compatable with the system that this is installed on)
 
 <details>
   <summary>Install zsh4hummans</summary>

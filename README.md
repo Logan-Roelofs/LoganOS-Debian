@@ -41,8 +41,8 @@ That is it!
 
 <details>
   <summary>Sync Brave </summary>
+  
   ### Sync Brave
-
   - Sync Brave
     
 </details>

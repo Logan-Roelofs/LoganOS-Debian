@@ -20,37 +20,31 @@ That is it!
 ### Post install 
 
 <details>
+  <summary>Change settings</summary>
+
+  ### Change settings
+
+  - update default browser
+  - Tweaks -> Appearance -> Themes, Legacy Application -> Select Dark theme 
+  
+</details>  
+
+<details>
   <summary>Change Tilix settings</summary>
     Change Tilix theme to Linux and enable dark mode and terminal title style to none
 </details>  
 
 <details>
-  <summary>customize vs code</summary>
-    - customize vs code
+  <summary>Sync vs code</summary>
+    - Sync vs code
 </details>  
 
 <details>
-  <summary>Install Brave extensions</summary>
-    List of all browser extensions to install in Brave- 
+  <summary>Sync Brave </summary>
+  ### Sync Brave
 
-    https://chrome.google.com/webstore/detail/copyfish-%F0%9F%90%9F-free-ocr-soft/eenjdnjldapjajjofmldgmkjaienebbj
-
-    https://chrome.google.com/webstore/detail/read-aloud-a-text-to-spee/hdhinadidafjejdhmfkjgnolgimiaplp
-
-    https://chrome.google.com/webstore/detail/hack-tools/cmbndhnoonmghfofefkcccljbkdpamhi
-
-    https://chrome.google.com/webstore/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh
-
-    https://chrome.google.com/webstore/detail/foxyproxy-standard/gcknhkkoolaabfmlnjonogaaifnjlfnp
-
-    https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep
-
-    https://chrome.google.com/webstore/detail/cookie-editor/hlkenndednhfkekhgcdicdfddnkalmdm
-
-    https://chrome.google.com/webstore/detail/colorpick-eyedropper/ohcpnigalekghcmgcdcenkpelffpdolg
-
-    https://chrome.google.com/webstore/detail/auto-hd4k8k-for-youtube-y/fjdmkanbdloodhegphphhklnjfngoffa
-
+  - Sync Brave
+    
 </details>
 
 <details>
@@ -79,4 +73,16 @@ That is it!
   chmod +x file
   ./file
   ```
+</details>
+
+<details>
+  <summary>Install Burp</summary>
+
+  ### Install extentions
+
+  - blur my shell
+  - app incons taskbar
+  - clipboard indicator
+  - unblank lock screen
+  - virals
 </details>

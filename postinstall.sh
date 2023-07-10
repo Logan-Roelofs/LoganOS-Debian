@@ -12,7 +12,7 @@ apt upgrade -y > /dev/null 2>&1
 
 # Install software
 echo "${GREEN}Installing programs...${NC}"
-apt-get install -y tilix zsh tree enum4linux neofetch smbclient net-tools gzip metasploit-framework ffuf hydra netcat-traditional curl john hash-identifier tldr ftp openvpn gobuster
+apt-get install -y tilix zsh tree enum4linux neofetch smbclient net-tools gzip metasploit-framework ffuf hydra netcat-traditional curl john hash-identifier tldr ftp openvpn gobuster seclists
 echo "${GREEN}Installing code...${NC}"
 apt-get install -y code
 echo "${GREEN}Installing programs that requier interaction...${NC}"

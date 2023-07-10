@@ -76,7 +76,7 @@ That is it!
 </details>
 
 <details>
-  <summary>Install Burp</summary>
+  <summary>Install extentions</summary>
 
   ### Install extentions
 
